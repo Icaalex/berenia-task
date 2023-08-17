@@ -1,18 +1,3 @@
-let myArr = [2, 3, 4, 5, 8, 23, 67, 10]; //array
-let fruit = ["mango", "apple", "orange"];
-let arr = [];
-
-let myArr2 = Array(7);
-
-let myObj = {}; // object
-
-console.log(myArr[5]);
-
-// console.log(" the length is ", myArr.length);
-
-// for(let i = 0; i < myArr.length; i++){
-//     console.log("The new value at index " + i  + " = " + myArr[i]);
-// }
 
 function getUserValue() {
     let num1 = prompt("Enter first number"); 
