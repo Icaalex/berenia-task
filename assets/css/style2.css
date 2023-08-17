@@ -1,0 +1,135 @@
+body{
+    background-color: rgb(246, 247, 245);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 50%;
+
+}
+.logo img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.cloudStyle{
+    width: 70px;
+    height: 40px;
+}
+.background{
+    width: 100%;
+    
+   }
+.main{
+    display: block;
+    max-width: 28%;
+    padding: 10px, 20px;
+    align-items: center;
+    margin: auto ;
+    margin-top: 6vw;
+    background-color: rgb(141, 33, 123);
+    box-sizing: border-box;
+    
+}
+.mobile{
+    display: none;
+
+   
+    
+}
+
+.header{
+    text-align: center;
+    background-color: rgb(141, 33, 123);
+    color: white;
+    padding: 6px;
+
+}
+.loginBoxbody{
+    color: white;
+    font-weight: bold;
+    margin: auto;
+    padding: 20px;
+    overflow: hidden;
+    text-align: center;
+    
+}
+.formstyle{
+   width: 80%;
+   height: 40px;
+   padding: 0x;
+   margin: 15px;
+   border: none;
+   color: rgb(141, 33, 123);;
+}
+.logbut{
+    width: 80%;
+    height: 40px;
+    border: none;
+    font-size: 14pt;
+    font-weight: bold;
+    background-color: rgb(54, 13, 92);
+    color: white;
+    letter-spacing: 2px;
+    margin: 15px;
+}
+.logbut:hover{
+    color: rgb(141, 33, 123);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.iconline{
+    width: 30%;
+    justify-content: center;
+    align-self: baseline;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: auto;
+}
+.iconflex{
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    padding: 5px;
+    
+}
+.iconflex img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    
+}
+.button +p{
+    color: rgb(230, 230, 230);
+}
+
+@media screen and (max-width: 765) {
+
+    .mobile{
+        display: block;
+        width: 100%;
+        padding: 10px, 20px;
+        align-items: center;
+        margin: auto ;
+        margin-top: 6vw;
+        background-color: rgb(141, 33, 123);
+        box-sizing: border-box;
+        
+    
+       
+        
+    }
+    
+    .main{
+        display: none;
+          
+    }
+    
+    
+}
