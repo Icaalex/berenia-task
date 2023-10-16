@@ -1,0 +1,162 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+:root{
+    --primary-text-color:#333;
+    --secondary-text-color:#fff;
+    
+}
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    overflow-x: hidden;
+    text-transform: capitalize;
+}
+.body-wrapper{
+    width: 100;
+    padding: 0 ;
+    margin:0;
+    box-sizing: border-box;
+
+}
+.nav-area{
+    width: 100%;
+    
+    
+}
+nav{
+    width: 100%;
+    padding:0;
+    margin:0;
+    justify-content: space-evenly;
+   
+
+
+}
+.logosection{
+ background-color: blue;
+ color: var(--secondary-text-color);
+ padding: 5px 10px;
+}
+.logosection h3{
+    padding: 5px;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+
+}
+.sidesectionbox-shadow{
+    
+    padding: 10px;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+.imgSection img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+nav ul{
+    list-style-type: none;
+    display: block;
+    box-shadow: 0  1px 2px  #776;
+    
+}
+li{
+    float: left;
+    display:block;
+    overflow-x: hidden;
+    padding: 10px;
+    font-size: 14px;
+}
+.formSection{
+    width: 100%;
+    color: var(--primary-text-color);
+   
+}
+.main-form-Section{
+    width: 65%;
+    color: #776;
+    padding: 10px;
+   
+}
+.right-form-Section{
+    width: 35%;
+    
+    
+}
+.spacesbox{
+    padding: 10px;
+    box-shadow: 0  1px 2px  rgb(131, 131, 115);
+
+}
+
+.searchButton{
+    margin-right: 15px;
+    border-radius: 30px;
+    width: 25%;
+    border: 1px solid #ccc;
+    display: flex;
+
+}
+.inputwidth{
+     border: none;
+    outline: none;
+   flex: 4;
+}
+
+.float-searchButton{
+    float: right;
+    overflow: hidden;
+    padding: 10px;
+ 
+}
+.searchButton i{
+    flex: 1;
+}
+
+.align-form{
+    padding: 20px;
+    margin: 0;
+
+}
+label{
+    color: #776;
+    font-size: 16px;
+}
+input{
+    border:none;
+    width: 30%;
+    outline: none;
+   
+}
+.noborderinput{
+    border-bottom:1px solid #776 ;
+    margin: 5px 0;
+}
+.align-form input{
+    height:50px;
+}
+
+.img02 img{
+    width:  100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.align-form option{
+    color: #776;
+    border: 1px solid #333;
+}
+.imgtext{
+text-align: center;
+padding: 5px;
+}

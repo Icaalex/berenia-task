@@ -1,0 +1,170 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+:root {
+    --primary-text-color: #333;
+    --secondary-text-color: #777777;
+}
+
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    overflow-x: hidden;
+}
+.page-wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    box-sizing: border-box;
+
+}
+
+.left-section {
+    float: left;
+    width: 30%;
+    background-color: rgb(245, 255, 245);
+    height: 100%;
+}
+.container {
+    float: right;
+    width: 70%;
+
+}
+.main-section {
+    float: left;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    border-left: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+.right-section {
+    float: right;
+    width: 30%;
+    background-color: #f7f7f7;
+    height: 100%;
+    min-width: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.image {
+    margin-right:30px;
+
+}
+
+.card {
+    /* box-shadow: 0px 0px 25px 6px #ccc; */
+    padding: 20px;
+}
+
+.d-flex {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.space-evenly  div{
+    justify-content: space-evenly;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+.align-left {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.align-right {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.align-left-self {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+img { 
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 400;
+}
+.sub-title {
+    color: var(--secondary-text-color);
+
+}
+
+.sub-title div{
+    margin: 10px;
+}
+
+p {
+    color: var(--primary-text-color);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.btn {
+    color: rgb(49, 102, 249);
+    text-transform: capitalize;
+}
+
+.search {
+    width: 90%;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+.search input {
+    flex: 4;
+    border: none;
+    outline: none;
+    padding: 8px;
+}
+
+.search i {
+    flex: 1;
+    padding: 8px;
+}
+
+.category {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0px;
+    padding-left: 10px;
+    font-family: "Lora", Arial, serif;
+    color: var(--secondary-text-color);
+}
+
+.cat {
+    padding: 10px;
+    border-bottom: 1px solid #dedddd;
+    color: var(--secondary-text-color);
+    box-sizing: border-box;
+}

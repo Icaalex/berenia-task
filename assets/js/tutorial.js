@@ -86,49 +86,73 @@
 //        console.log("Oops! we currently don't have the car");
 //    }
 
- let list = {
-     "Ade": "ebola",
-     "bimbo": "corona",
-     "kamsiyo": "123rte"
- }
+//  let list = {
+//      "Ade": "ebola",
+//      "bimbo": "corona",
+//      "kamsiyo": "123rte"
+//  }
 
- console.log("the virus is", list);
+//  console.log("the virus is", list);
 
- list["kate"] = "malaria";
+//  list["kate"] = "malaria";
 
 
- console.log("new objects", list);
- console.log("kate sickness is", list.kate);
+//  console.log("new objects", list);
+//  console.log("kate sickness is", list.kate);
 
-let listArr = Object.keys(list);
-console.log( listArr);
+// let listArr = Object.keys(list);
+// console.log( listArr);
 
-for(i=0; i < listArr.length; i++){
-   let car = listArr[i];
-   let sickness = list[car];
-   console.log(car, "is", sickness );
-}
-let space = ""
-console.log(space);
-listArr.forEach(bla => {
-    let sickful = list[bla] ;
-    console.log(  bla, "is" ,sickful);
+// for(i=0; i < listArr.length; i++){
+//    let car = listArr[i];
+//    let sickness = list[car];
+//    console.log(car, "is", sickness );
+// }
+// let space = ""
+// console.log(space);
+// listArr.forEach(bla => {
+//     let sickful = list[bla] ;
+//     console.log(  bla, "is" ,sickful);
 
-})
-console.log(space);
-let noSick = "bread" ;
+// })
+// console.log(space);
+// let noSick = "bread" ;
 
- if (listArr.indexOf(noSick) == -1) {
-    console.log("yes it is correct", );
- } 
- else {
-   console.log("wrong");
+//  if (listArr.indexOf(noSick) == -1) {
+//     console.log("yes it is correct", );
+//  } 
+//  else {
+//    console.log("wrong");
     
- }
-console.log(space);
+//  }
+// console.log(space);
 
- if (listArr.includes(noSick)) {
-    console.log("yes correct");
- } else {
-    console.log("is not available");
- }
+//  if (listArr.includes(noSick)) {
+//     console.log("yes correct");
+//  } else {
+//     console.log("is not available");
+//  }
+    // todays 
+// let arr = ["john", "mark"];
+//  arr["uju"] = ["mark", "joy"];
+// console.log("array data", arr["uju"] );
+
+let arr = []
+arr["class_1"] = ["jane mark", "joy clara", "Bobby Cool"];
+arr["class_2"] = ["goodness adam", "Bukky Dorathy", "Isaac Joseph"];
+
+console.log(arr["class_1"][0]);
+
+let myObj = {
+   class_1: ["jane mark", "joy clara", "Bobby Cool"],
+   class_2: ["goodness adam", "Bukky Dorathy", "Isaac Joseph"]
+   
+}
+
+let ObjArr = Object.keys(myObj);
+ObjArr.forEach((element)  => {
+   console.log("obj array log", element, "", myObj[element]);
+})
+
+
+console.log(arr.class_1[0]);

@@ -88,63 +88,89 @@
 // console.log("result is ", res);
 
 let students = [
-    {name: "John", class: "js3", age: 20},
-    {name: "Job", class: "js2", age: 21},
-    {name: "Mark", class: "js3", age: 17},
-    {name: "Divine", class: "js1", age: 18},
-    {name: "Mabel", class: "js3", age: 17},
-    {name: "Peter", class: "js2", age: 16}
+    {school: "John", class: "js3", age: 20},
+    {school: "John", class: "js2", age: 21},
+    {school: "Mark", class: "js3", age: 17},
+    {school: "Mark", class: "js1", age: 18},
+    {school: "Peter", class: "js3", age: 17},
+    {school: "Peter", class: "js2", age: 16}
 ];
-let studentsHtml = document.getElementById("student");
-let tableHeader = `
 
+students.forEach( bla =>{
+  if( bla.school == "John" ) {
+   console.log( bla.school, " " , bla.class ," " , bla.age);
+  }
+    else{
+    console.log("");
+    }
+    if( bla.school == "Mark" ) {
+        console.log(bla.school, " " , bla.class ," " , bla.age);
+       }
+         else{
+         console.log("");
+         }
+         if( bla.school == "Peter" ) {
+            console.log( bla.school, " " , bla.class ," " , bla.age);
+           }
+             else{
+             console.log("");
+             }
+
+});
+
+
+
+
+ let studentsHtml = document.getElementById("student");
+ let tableHeader = 
+ `
 <tr>
-   <th>Name</th>
+     <th>Name</th>
    <th>Class</th>
-   <th>Age</th>
-</tr>
-`
+    <th>Age</th>
+ </tr>
+  `
 ;
 
 let newStudent = students.map((val)=>{
-    tableBody = 
+     tableBody = 
     `
     <tr>
       <td> ${val.name} </td>
-      <td> ${val.age}</td>
+       <td> ${val.age}</td>
       <td> ${val.class}</td>
     </tr>
-    `;
+     `;
     return tableBody
-});
+ });
 
-newStudent = tableHeader + newStudent.join();
-studentsHtml.innerHTML = newStudent;
-console.log(newStudent);
+ newStudent = tableHeader + newStudent.join();
+ studentsHtml.innerHTML = newStudent;
+ console.log(newStudent);
 
-// let obj = {name: "mark", school: "st.peter"}
+ // let obj = {name: "mark", school: "st.peter"}
 
 // console.log(obj.school);
 // let result = arr.filter((val) => val.age < 20 && val.class == "js3");
 
 // console.log("result is ", result);
 
-console.log("fruit", fruits);
+//console.log("fruit", fruits);
 //  fruits = fruits.join();
 
 // console.log("fruit after join", fruits);
 
-let htmlList = document.getElementById("list");
-console.log("list before loop ", htmlList);
-let newFruits = fruits.map((val) => {
-    let myList = "<li>" + val + "</li>";
-    console.log(myList);
-    return myList;
-});
+// let htmlList = document.getElementById("list");
+// console.log("list before loop ", htmlList);
+// let newFruits = fruits.map((val) => {
+//     let myList = "<li>" + val + "</li>";
+//     console.log(myList);
+//     return myList;
+// });
 
-console.log("before join ", newFruits);
-newFruits = newFruits.join(" ");
-console.log("after join ", newFruits);
-htmlList.innerHTML = newFruits;
+// console.log("before join ", newFruits);
+// newFruits = newFruits.join(" ");
+// console.log("after join ", newFruits);
+// htmlList.innerHTML = newFruits;
 
 
